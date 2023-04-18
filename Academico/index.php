@@ -11,7 +11,7 @@
             </head>
             <body>
                 <h2>Sistema de ensino</h2>
-                <form method="get" action="index.php">
+                <form method="post" action="detalhesUsuario.php">
                     <table>
                         <tr>
                             <td>Matricula (número):</td>
