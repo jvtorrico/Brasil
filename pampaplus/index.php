@@ -36,17 +36,27 @@
                 </tr>
                 
                 <tr>
-                    <td> selecione um tipo de acesso</td>     
-                    <td> <input type= "radio" name ="acesso"> Administrador
-                    <input type= "radio" name ="acesso"> Administrador
+                    <td> selecione um tipo de acesso<td> 
+                    <td>
+                        <input type= "radio" name ="acesso" value="Administrador"> Administrador
+                        <br>
+                        <input type= "radio" name ="acesso" value="Estudante"> Estudante
+                        <br>
+                        <input type="radio" name="acesso" value="Produtor"> Produtor
+                        <br> 
+                        <input type="radio" name="acesso" value="Professor"> Professor
+                        <br> 
+                        <input type="radio" value="acesso" value=" Tecnico"> Técnico
+                        <br>  
+                        <input type="radio" name="acesso" value="Visitante"> Visitante
                     </td>
+                </tr>
                    
              
                     
                     
-                </tr>
-               
-                
+              
+           
             </table
             
         </form>

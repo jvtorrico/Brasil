@@ -1,4 +1,4 @@
-<!DOCTYPE hmtl>
+<!doctype html>
 <html>
     <head>
         <title>PampaCortePlus</title>
@@ -33,12 +33,12 @@
                 <td>Atuação</td>
                 <td> <textarea name= "atuacao" placeholder="informe sua área de atuação"> </textarea> <td>
                 <td></td>
-                </tr>
+                </tr> 
                 
                 <tr>
                     <td> selecione um tipo de acesso</td>     
-                    <td> <imput type= "radio" name ="acesso"> Administrador</td>
-                    <tr> <input type= "radio" name ="acesso"> Estudante </tr>
+                    
+                    
                     
                     
                 </tr>
