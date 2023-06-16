@@ -1,118 +1,62 @@
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edit this template
--->
+
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Sistema de ensino</title>
-        <link href="css/default.css" rel="stylesheet" type="text/css"/>
-        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-        <script src="js/jquery.min.js" type="text/javascript"></script>
-        <script src="js/bootstrap.min.js" type="text/javascript"></script>
-    </head>
-    <body>
-        <h2>Sistema de ensino</h2>
-        <form method="post" action="userDetails.php">
-            <table>
-                <tr>
-                    <td>Matricula (número):</td>
-                    <td>
-                        <!-- int matricula = 1872150 -->
-                        <input type="number" name="matricula"
-                               placeholder="Matricula">
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Nome:</td>
-                    <td>
-                        <input type="text" name="nome"
-                               placeholder="Nome do aluno">
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Turmas:</td>
-                    <td>
-                        <input type="radio" name="turma" value="411">411
-                        <input type="radio" name="turma" value="423">423
-                        <input type="radio" name="turma" value="413">413
-                        <br>
-                        <input type="radio" name="turma" value="421">421
-                        <input type="radio" name="turma" value="422">422
-                        <input type="radio" name="turma" value="433">433
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Telefone:</td>
-                    <td>
-                        <input type="text" name="telefone"
-                               placeholder="Telefone de contato">
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Endereço:</td>
-                    <td>
-                        <input type="text" name="endereco"
-                               placeholder="Endereço">
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Estado:</td>
-                    <td>
-                        <select name="estado">
-                            <option value="">Selecione um estado</option>
-                            <option value="RS">RS</option>
-                            <option value="SC">SC</option>
-                            <option value="SP">SP</option>
-                        </select>
-                    </td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <input type="submit" value="Enviar">
-                        <input type="reset" value="Limpar campos">
-                    </td>
-                    <td></td>
-                </tr>
-            </table>
-            <?php
-            if ($_GET) {
-                //Imprime tudo que estiver dentro do array.
-                //print_r($_GET);
-                @$matricula = $_GET['matricula'];
-                @$nome = $_GET['nome'];
-                @$turma = $_GET['turma'];
-                @$telefone = $_GET['telefone'];
-                @$endereco = $_GET['endereco'];
-                @$estado = $_GET['estado'];
-                
-                //|| - ou 
-                //&& - e
-                if (empty($matricula)|| empty($nome)
-                        || empty($turma) || empty($telefone) 
-                        || empty($endereco) || empty($estado)) {
-                    echo('<div class="alert"> Todos os campos são obrigatórios. </div>');
-                }else{
-                    //entra aqui se todos os campos obrigatórios forem preenchidos.
-                    // nomeCompleto = nome + sobrenome; //concatenação de strings
-                    $result = "Matricula: ".$matricula. "<br>Nome: ".$nome.
-                            "<br>Turma: ".$turma. "<br>Telefone: ".$telefone.
-                            "<br>Endereço: ".$endereco.
-                            "<br>Estado: ".$estado;
-                    echo($result);
-                }
-                
-               
+        
+        <title>Página Principal</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+        <style>
+            .col-md-12{
+                border: 1px solid black;
             }
-            ?>
-        </form>
+            p{
+               text: text-bg-info;
+                
+            }
+            
+        </style>
+    </head>
+    <body class="container">
+        <!<!-- menu -->
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="nav nav-pills">
+                     <li class="nav-item">
+    <a class="nav-link " href="#">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="tablepage.php">Table Bootstrap</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="modalpage">Modal Bootstrap</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link " href="carouselpage">Modal Carousel</a>
+  </li>
+                </ul>
+                
+            </div>
+            
+        </div>
+        <!<!-- fim do mwnu -->
+        <div class="row">
+            <!<!-- Corpo da página -->  
+            <div class="col-md-12">
+                 <h1><b>Sobre o Site!!!</b></h1>
+                <p class="text-bg-info">
+               
+                  Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                </p>
+                
+            </div>
+            
+        </div>      
+        
+        
+        <?php
+       
+        ?>
     </body>
 </html>
