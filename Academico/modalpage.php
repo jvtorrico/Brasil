@@ -2,11 +2,13 @@
 <html>
   
 <?php
-require_once './charet/header.php';
+  require_once './controller/autenticationController.php';
+require_once './shared/header.php';
 ?>
 <?php
-require_once './charet/footer.php';
-?>
+require_once './shared/footer.php';
+?> 
+     
     <a href="#" class="btn btn-success" data-bs-toggle="modal"data-bs-target="#myModal">Abrir modal</a> 
   
     <!-- The Modal -->
@@ -16,7 +18,8 @@ require_once './charet/footer.php';
 
       <!-- Modal Header -->
       <div class="modal-header">
-        <h4 class="modal-title">Bem vindo!!!</h4>
+   <h2> <?php session_start(); echo ('Bem-vindo '.@$_SESSION['login']) ?> </h2
+     
         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
       </div>
 

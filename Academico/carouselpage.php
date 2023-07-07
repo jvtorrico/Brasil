@@ -2,7 +2,8 @@
 <html>
     
 <?php
-require_once './charet/header.php';
+  require_once './controller/autenticationController.php';
+require_once './shared/header.php';
 ?>
     <style>
         .carousel-indicators [data-bs-taget] {
@@ -48,7 +49,7 @@ require_once './charet/header.php';
   </button>
 </div>
 <?php
-require_once './charet/footer.php';
+require_once './shared/footer.php';
 ?>
 
     

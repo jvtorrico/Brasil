@@ -2,7 +2,8 @@
 <html>
     
 <?php
-require_once './charet/header.php';
+  require_once './controller/autenticationController.php';
+require_once './shared/header.php';
 ?>
     <div>
         <script>
@@ -257,7 +258,7 @@ require_once './charet/header.php';
     
     
 <?php
-require_once './charet/footer.php';
+require_once './shared/footer.php';
 ?>
 
     </html>
