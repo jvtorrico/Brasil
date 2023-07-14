@@ -18,7 +18,7 @@ require_once './shared/footer.php';
 
       <!-- Modal Header -->
       <div class="modal-header">
-   <h2> <?php session_start(); echo ('Bem-vindo '.@$_SESSION['login']) ?> </h2
+          <h2></h2>
      
         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
       </div>

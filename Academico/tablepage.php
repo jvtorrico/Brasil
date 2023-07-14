@@ -6,252 +6,60 @@
 require_once './shared/header.php';
 ?>
     <div>
-        <script>
-        $(document) .ready(function(){
-            $('#exemple') .DataTable();
-        });
-        </script>
+       
+        <br>
         <table id="exemple"class="table table-responsive table-bordered table-striped table-dark">
-               <head>
+             
             <thead>
  
         <tr>
             <th>
-                Nome do componente
+               name
                 
             </th>
             <th>
-                Descrição
+        Stocl
+            </th>
+            <th>
+                Sold
             </th>
             
         </tr>
             </thead>
-        </head>    
-        <body>
-            <tr>
-            <td>
-               Elemento 1 
-                
-            </td>
-            <td>
-                Descrição 1
-            </td>
-            
-        </tr>
-            
-            <tr>
-            <td>
-               Elemento 2
-                
-            </td>
-            <td>
-                Descrição 2
-            </td>
-            
-        </tr>
-            
-            <tr>
-            <td>
-               Elemento 3 
-                
-            </td>
-            <td>
-                Descrição 3
-            </td>
-            
-        </tr>
-            
-            <tr>
-            <td>
-               Elemento 4
-                
-            </td>
-            <td>
-                Descrição 4
-            </td>
-            
-        </tr>
-            
-            <tr>
-            <td>
-               Elemento 5
-                
-            </td>
-            <td>
-                Descrição 5
-            </td>
-            
-        </tr>
-            
-            <tr>
-            <td>
-               Elemento 6
-                
-            </td>
-            <td>
-                Descrição 6
-            </td>
-            
-        </tr>
-            
-            <tr>
-            <td>
-               Elemento 7 
-                
-            </td>
-            <td>
-                Descrição 7
-            </td>
-            
-        </tr>
-            
-            <tr>
-            <td>
-               Elemento 8
-                
-            </td>
-            <td>
-                Descrição 8
-            </td>
-            
-        </tr>
-            
-            <tr>
-            <td>
-               Elemento 9
-                
-            </td>
-            <td>
-                Descrição 9
-            </td>
-            
-        </tr>
-            
-            <tr>
-            <td>
-               Elemento 10
-                
-            </td>
-            <td>
-                Descrição 10
-            </td>
-            
-        </tr>
-            
-            <tr>
-            <td>
-               Elemento 11 
-                
-            </td>
-            <td>
-                Descrição 11
-            </td>
-            
-        </tr>
-            
-            <tr>
-            <td>
-               Elemento 12 
-                
-            </td>
-            <td>
-                Descrição 12
-            </td>
-            
-        </tr>
-            
-            <tr>
-            <td>
-               Elemento 13 
-                
-            </td>
-            <td>
-                Descrição 13
-            </td>
-            
-        </tr>
-            
-            <tr>
-            <td>
-               Elemento 14 
-                
-            </td>
-            <td>
-                Descrição 14
-            </td>
-            
-        </tr>
-            
-            <tr>
-            <td>
-               Elemento 15 
-                
-            </td>
-            <td>
-                Descrição 15
-            </td>
-            
-        </tr>
-            
-            <tr>
-            <td>
-               Elemento 16
-                
-            </td>
-            <td>
-                Descrição 16
-            </td>
-            
-        </tr>
-            
-            <tr>
-            <td>
-               Elemento 17 
-                
-            </td>
-            <td>
-                Descrição 17
-            </td>
-            
-        </tr>
-            
-            <tr>
-            <td>
-               Elemento 18 
-                
-            </td>
-            <td>
-                Descrição 18
-            </td>
-            
-        </tr>
-            
-            <tr>
-            <td>
-               Elemento 19 
-                
-            </td>
-            <td>
-                Descrição 19
-            </td>
-            
-        </tr>
-            
-            <tr>
-            <td>
-               Elemento 20 
-                
-            </td>
-            <td>
-                Descrição 20
-            </td>
-            
-        </tr>
-            
-            
-        </body>
-        </table>
+   <tbody>
         
+       
+        </tbody>
+          <tbody>
+             <?php
+             
+             //abrir a conexão com banco de dados
+             //executar a consulta swl
+             // trabalhar com o resultado desta consulta
+             //$cars= resultado da consulta
+             // select*cars
+$cars = array (
+  array("Volvo",22,18),
+  array("BMW",15,13),
+  array("Saab",5,2),
+  array("Land Rover",17,15)
+);
+foreach ($cars as $row)
+{
+    echo('<tr>');
+    foreach($row as $col){
+        echo('<td>');
+        echo($col);
+        echo('</td>');
+    }
+    echo('</tr>');
+}
+
+
+?>
+        
+          </tbody>
+        </table>
         
     </div>
     

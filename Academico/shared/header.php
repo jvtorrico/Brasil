@@ -46,12 +46,21 @@
   <li class="nav-item">
     <a class="nav-link " href="carouselpage">Modal Carousel</a>
   </li>
-  <li class="nav-item">
+  
+   <?php 
+   @session_start();
+if($_SESSION)
+{
+    echo('<li class="nav-item">
       <a class="nav-link link-danger"
         style="text-decoration:none;"
         href="controller/logoutController.php?cod=logout">Logout</a>
-  </li>
- 
+  </li>');
+    
+    
+}
+   
+   ?>
       
   
   
